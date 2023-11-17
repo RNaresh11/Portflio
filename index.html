@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f86a9674a2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/logo.png" class="logo" alt=""> -->
+                <h2 class="logo">MyPortfolio</h2>
+                <ul id="sidemenu">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class=" fas fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class=" fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header">
+                <p>A small introduction</p>
+                <h1>Hi i am <span>Naresh</span><br>It is my Portfolio</h1>
+            </div>
+            <div class="waving">
+                <img src="images/waving.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- about  -->
+    <div id="about">
+        <div class="container">
+            <div class="column">
+                <div class="left-col">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Hello, I'm Naresh Rawat, a passionate college student currently pursuing a degree in B.Tech in CSE at GNIT(GGSIPU).I'm dedicated to honing my skills in front-end development / Python. My academic journey has equipped me with a strong foundation , and I'm eager to translate this knowledge into meaningful projects that make a difference.I look forward to the exciting opportunities that lie ahead. Thanks for visiting my portfolio, and feel free to explore my work to learn more about my journey and capabilities</p>
+                    <div class="information">
+                        <p class="info active-link" onclick="opentab('education')">Education</p>
+                        <p class="info" onclick="opentab('skills')"> Skills</p><br>
+                        <p class="info" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="contents active-tab" id="education">
+                        <ul>
+                        
+                        <li><span>Secondary Education</span><br>I completed my Secondary Education from Panchsheel School</li>
+                        <li><span>College</span><br>And currently pursuing BTech Degree in CSE branch</li>
+                    </ul>
+                    </div>
+                    <div class="contents" id="skills">
+                        <ul>
+                        <li><span>Front-end</span><br>In front-end i completed HTML,CSS and JavaScript and currently learning Node js and Express js</li>
+                        <li><span>Python</span><br>I have completed the Python course from Great learning platform which gives a great knowledge about that language</li>
+                        <li><span>Excel</span><br>And i also completed the Excel course from Great learning at beginner and intermediate level</li>
+                    </ul>
+                    </div>
+                    <div class="contents" id="experience">
+                        <ul>
+                        <li><span>front-end</span><br>at current time i have only 7-8 months of experience in front-end development and i continuosly learnig in right direction </li>
+                        <li><span>pyhton</span><br>In python i have not experience currently but i am willing to take the opportunity to learn more and take experience in that field</li>
+                        
+                    </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle service">Services</h1>
+            <div class="services-list">
+                <div >
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>In that field i started to making the website according to the user and willing to do more projects so that i can make much better projects  </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div >
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Canva</h2>
+                    <p>I also learned that canva at basic level. In canva i created many templates and cool design for my projects and college works</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div >
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Excel</h2>
+                    <p>Excel which is the most important skill which help people in almost every field </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Solar-System</h3>
+                        
+                        <a href="https://lucky-travesseiro-fa6083.netlify.app/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Simple Calculator</h3>
+                        
+                        <a href="https://vermillion-starship-fe261e.netlify.app/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>QR code generator</h3>
+                        
+                        <a href="https://visionary-crepe-9299b4.netlify.app/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="column">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                    <p><i class="fa-solid fa-phone"></i>000-111-2222</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-square-twitter"></i></a>   
+                    </div>
+                    <a href="images/cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="7" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-solid fa-copyright"></i></p>
+        </div>
+    </div>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+</body>
+</html>
